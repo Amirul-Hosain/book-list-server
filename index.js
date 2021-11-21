@@ -33,15 +33,6 @@ async function run() {
             const cursor = booksCollection.find({});
             const book = await cursor.toArray();
 
-            // search a book
-            // const search = req.query.search;
-            // if (search) {
-            //     const searchResult = books.filter(book => book.title.toLowerCase().includes(search));
-            //     res.send(searchResult);
-            // }
-            // else {
-            //     res.send(books)
-            // }
 
             res.json(book)
 
